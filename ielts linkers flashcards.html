@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IELTS Linkers & Discourse Markers • Band 6–9 Studio (72 Cards)</title>
+<style>
+  :root {
+    --bg-dark: #0b0d17; --glass: rgba(255, 255, 255, 0.05); --glass-border: rgba(255, 255, 255, 0.12);
+    --text-main: #f8fafc; --text-muted: #94a3b8; --accent-purple: #a855f7; --accent-pink: #ec4899;
+    --accent-cyan: #06b6d4; --accent-lime: #84cc16; --band6: #38bdf8; --band7: #c084fc; --band8: #f43f5e;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', system-ui, sans-serif; }
+  body {
+    background-color: var(--bg-dark);
+    background-image: radial-gradient(circle at 12% 15%, rgba(168, 85, 247, 0.18), transparent 35%),
+      radial-gradient(circle at 88% 20%, rgba(6, 182, 212, 0.18), transparent 35%),
+      radial-gradient(circle at 50% 85%, rgba(236, 72, 153, 0.14), transparent 40%);
+    color: var(--text-main); min-height: 100vh; line-height: 1.5;
+  }
+  header { padding: 1.5rem 2rem; border-bottom: 1px solid var(--glass-border); backdrop-filter: blur(14px); position: sticky; top: 0; z-index: 100; background: rgba(11, 13, 23, 0.85); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; }
+  .brand { display: flex; align-items: center; gap: 0.85rem; }
+  .logo-badge { width: 44px; height: 44px; border-radius: 14px; background: linear-gradient(135deg, var(--accent-purple), var(--accent-pink), var(--accent-cyan)); display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 1.2rem; color: #fff; }
+  .brand h1 { font-size: 1.35rem; font-weight: 800; color: #fff; }
+  .brand p { font-size: 0.8rem; color: var(--text-muted); }
+  .stats-bar { display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap; }
+  .stat-pill { background: var(--glass); border: 1px solid var(--glass-border); padding: 0.45rem 0.9rem; border-radius: 999px; font-size: 0.82rem; font-weight: 600; }
+  .stat-pill span { color: var(--accent-cyan); font-weight: 800; }
+  .studio-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 1.75rem; max-width: 1560px; margin: 0 auto; padding: 1.75rem 2rem 3rem; align-items: start; }
+  @media (max-width: 1120px) { .studio-grid { grid-template-columns: 1fr; } }
+  .panel-header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem; }
+  .panel-title { font-size: 1.2rem; font-weight: 800; }
+  .filter-bar { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.25rem; }
+  .filter-btn { background: var(--glass); border: 1px solid var(--glass-border); color: var(--text-muted); padding: 0.45rem 0.9rem; border-radius: 999px; font-size: 0.8rem; font-weight: 600; cursor: pointer; }
+  .filter-btn.active { background: linear-gradient(135deg, var(--accent-purple), var(--accent-pink)); color: #fff; border-color: transparent; }
+  .search-input { width: 100%; background: rgba(20, 24, 41, 0.9); border: 1px solid var(--glass-border); color: #fff; padding: 0.65rem 1rem; border-radius: 12px; font-size: 0.9rem; margin-bottom: 1.25rem; outline: none; }
+  .cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.15rem; }
+  .flip-card { background-color: transparent; height: 315px; perspective: 1100px; cursor: pointer; }
+  .flip-card-inner { position: relative; width: 100%; height: 100%; transition: transform 0.6s; transform-style: preserve-3d; }
+  .flip-card.flipped .flip-card-inner { transform: rotateY(180deg); }
+  .flip-card-front, .flip-card-back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 20px; padding: 1.2rem; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid var(--glass-border); }
+  .flip-card-front { background: linear-gradient(155deg, #171c31 0%, #101322 100%); }
+  .flip-card-back { background: linear-gradient(155deg, #1f1938 0%, #131b2e 100%); border-color: rgba(6, 182, 212, 0.45); transform: rotateY(180deg); overflow-y: auto; }
+  .card-top-badges { display: flex; justify-content: space-between; align-items: center; gap: 0.4rem; }
+  .band-tag { font-size: 0.72rem; font-weight: 800; padding: 0.25rem 0.65rem; border-radius: 999px; text-transform: uppercase; }
+  .band-6 { background: rgba(56, 189, 248, 0.16); color: var(--band6); border: 1px solid rgba(56, 189, 248, 0.4); }
+  .band-7 { background: rgba(192, 132, 252, 0.16); color: var(--band7); border: 1px solid rgba(192, 132, 252, 0.4); }
+  .band-8 { background: rgba(244, 63, 94, 0.16); color: var(--band8); border: 1px solid rgba(244, 63, 94, 0.4); }
+  .mode-tag { font-size: 0.72rem; font-weight: 700; padding: 0.25rem 0.65rem; border-radius: 999px; background: rgba(255, 255, 255, 0.07); }
+  .mode-writing { color: #67e8f9; } .mode-speaking { color: #f9a8d4; } .mode-both { color: #bef264; }
+  .card-word { font-size: 1.4rem; font-weight: 800; color: #fff; margin: auto 0 0.35rem; }
+  .role-pill-front { display: inline-block; font-size: 0.72rem; font-weight: 600; color: #fbbf24; background: rgba(245, 158, 11, 0.12); border: 1px solid rgba(245, 158, 11, 0.3); padding: 0.2rem 0.55rem; border-radius: 8px; margin-bottom: auto; align-self: flex-start; }
+  .card-footer-hint { display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-muted); border-top: 1px solid rgba(255, 255, 255, 0.07); padding-top: 0.6rem; }
+  .back-label { font-size: 0.65rem; font-weight: 800; text-transform: uppercase; color: var(--accent-cyan); margin-bottom: 0.15rem; }
+  .back-role-text { font-size: 0.76rem; font-weight: 700; color: #fcd34d; margin-bottom: 0.5rem; }
+  .back-def { font-size: 0.79rem; color: #e2e8f0; margin-bottom: 0.55rem; }
+  .back-example-box { background: rgba(0, 0, 0, 0.32); border-left: 3px solid var(--accent-pink); padding: 0.5rem 0.65rem; border-radius: 8px; font-size: 0.77rem; color: #cbd5e1; font-style: italic; }
+  .back-example-box strong { color: #fff; font-style: normal; text-decoration: underline; text-decoration-color: var(--accent-cyan); }
+  .quiz-panel { background: rgba(20, 24, 41, 0.88); border: 1px solid var(--glass-border); border-radius: 24px; padding: 1.5rem; position: sticky; top: 92px; }
+  .quiz-progress-wrap { width: 100%; height: 8px; background: rgba(255, 255, 255, 0.08); border-radius: 999px; overflow: hidden; margin: 0.85rem 0 1.25rem; }
+  .quiz-progress-fill { height: 100%; width: 2%; background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple), var(--accent-pink)); transition: width 0.35s; }
+  .quiz-meta { display: flex; justify-content: space-between; align-items: center; font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.75rem; }
+  .quiz-sentence-box { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 1.25rem; font-size: 1.05rem; font-weight: 600; color: #fff; margin-bottom: 1.15rem; }
+  .blank-slot { display: inline-block; min-width: 110px; border-bottom: 2px dashed var(--accent-cyan); color: var(--accent-cyan); text-align: center; font-weight: 800; padding: 0 0.4rem; }
+  .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 1.15rem; }
+  .option-btn { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.14); color: #f8fafc; padding: 0.85rem 1rem; border-radius: 14px; font-size: 0.92rem; font-weight: 700; cursor: pointer; text-align: left; display: flex; align-items: center; gap: 0.6rem; }
+  .option-btn:hover:not(:disabled) { background: rgba(168, 85, 247, 0.18); border-color: var(--accent-purple); }
+  .option-btn.correct { background: rgba(132, 204, 22, 0.22); border-color: var(--accent-lime); color: #d9f99d; }
+  .option-btn.wrong { background: rgba(244, 63, 94, 0.22); border-color: #f43f5e; color: #fecdd3; }
+  .option-letter { width: 24px; height: 24px; border-radius: 7px; background: rgba(255,255,255,0.1); display: inline-flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 800; }
+  .feedback-banner { border-radius: 14px; padding: 0.9rem 1rem; font-size: 0.85rem; margin-bottom: 1rem; display: none; }
+  .feedback-banner.show { display: block; }
+  .feedback-banner.ok { background: rgba(132, 204, 22, 0.14); border: 1px solid rgba(132, 204, 22, 0.4); color: #ecfccb; }
+  .feedback-banner.err { background: rgba(244, 63, 94, 0.14); border: 1px solid rgba(244, 63, 94, 0.4); color: #ffe4e6; }
+  .quiz-controls { display: flex; justify-content: space-between; gap: 0.75rem; }
+  .btn-primary { background: linear-gradient(135deg, var(--accent-purple), var(--accent-pink)); color: #fff; border: none; padding: 0.75rem 1.35rem; border-radius: 12px; font-weight: 700; cursor: pointer; }
+  .btn-secondary { background: rgba(255, 255, 255, 0.08); color: #e2e8f0; border: 1px solid rgba(255, 255, 255, 0.15); padding: 0.75rem 1rem; border-radius: 12px; font-weight: 600; cursor: pointer; }
+  .blacklist-box { margin-top: 2rem; background: rgba(244, 63, 94, 0.08); border: 1px solid rgba(244, 63, 94, 0.3); border-radius: 18px; padding: 1.25rem; }
+  .blacklist-box h3 { color: #fda4af; font-size: 0.95rem; margin-bottom: 0.5rem; }
+  .blacklist-chips { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.65rem; }
+  .bad-chip { background: rgba(244, 63, 94, 0.15); color: #fecdd3; border: 1px solid rgba(244, 63, 94, 0.3); padding: 0.25rem 0.65rem; border-radius: 8px; font-size: 0.76rem; text-decoration: line-through; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <div class="logo-badge">9.0</div>
+    <div>
+      <h1>IELTS Linkers & Discourse Studio</h1>
+      <p>72 Flashcards with Grammatical Roles + Full Contextual Practice Arena</p>
+    </div>
+  </div>
+  <div class="stats-bar">
+    <div class="stat-pill">🃏 Deck: <span id="totalCardsStat">72</span> Linkers</div>
+    <div class="stat-pill">⚡ Quiz Score: <span id="scoreStat">0 / 0</span></div>
+    <div class="stat-pill">🔥 Streak: <span id="streakStat">0</span></div>
+  </div>
+</header>
+
+<main class="studio-grid">
+  <section>
+    <div class="panel-header">
+      <h2 class="panel-title">✨ Flashcard Deck <span style="font-size:0.8rem;font-weight:500;color:var(--text-muted)">(Click any card to flip)</span></h2>
+      <button class="btn-secondary" onclick="flipAllCards()">Flip All</button>
+    </div>
+    <input type="text" id="searchInput" class="search-input" placeholder="🔍 Search a linker, grammatical role, band, or category..." oninput="renderCards()">
+    <div class="filter-bar" id="filterBar">
+      <button class="filter-btn active" id="allFilterBtn" data-filter="ALL" onclick="setFilter('ALL', this)">All (72)</button>
+      <button class="filter-btn" data-filter="Band 6" onclick="setFilter('Band 6', this)">Band 6</button>
+      <button class="filter-btn" data-filter="Band 7" onclick="setFilter('Band 7', this)">Band 7</button>
+      <button class="filter-btn" data-filter="Band 8–9" onclick="setFilter('Band 8–9', this)">Band 8–9</button>
+      <button class="filter-btn" data-filter="Writing" onclick="setFilter('Writing', this)">✍️ Writing</button>
+      <button class="filter-btn" data-filter="Speaking" onclick="setFilter('Speaking', this)">🎙️ Speaking</button>
+    </div>
+    <div class="cards-grid" id="cardsGrid">Loading flashcards...</div>
+    <div class="blacklist-box">
+      <h3>🚫 IELTS Blacklist: Avoid These Overused Clichés (Capped at Band 5–6)</h3>
+      <p style="font-size:0.82rem;color:#cbd5e1;">Examiners penalize memorized template fillers and using formal essay words during the Speaking test.</p>
+      <div class="blacklist-chips">
+        <span class="bad-chip">Every coin has two sides</span>
+        <span class="bad-chip">In a nutshell</span>
+        <span class="bad-chip">Last but not least</span>
+        <span class="bad-chip">With the rapid development of society</span>
+        <span class="bad-chip">Henceforth / Heretofore</span>
+        <span class="bad-chip">"Moreover" in Speaking</span>
+        <span class="bad-chip">"In conclusion" in Speaking</span>
+      </div>
+    </div>
+  </section>
+
+  <aside class="quiz-panel">
+    <div class="panel-header" style="margin-bottom:0.25rem;">
+      <h2 class="panel-title">🎯 Context Practice Test</h2>
+      <span id="qCounter" style="font-size:0.85rem;font-weight:800;color:var(--accent-cyan);">Question 1 / 72</span>
+    </div>
+    <p style="font-size:0.82rem;color:var(--text-muted);">Choose the exact linker that fits the context and grammar of the sentence.</p>
+    <div class="quiz-progress-wrap"><div class="quiz-progress-fill" id="progressBar">.</div></div>
+    <div class="quiz-meta">
+      <span id="qTargetTag" class="band-tag band-7">Target: Band 7 • Writing</span>
+      <span id="qCategoryTag" style="font-weight:700;color:#cbd5e1;">Contrast</span>
+    </div>
+    <div class="quiz-sentence-box" id="quizSentence">Loading question...</div>
+    <div class="options-grid" id="optionsGrid">Loading options...</div>
+    <div class="feedback-banner" id="feedbackBanner">.</div>
+    <div class="quiz-controls">
+      <button class="btn-secondary" onclick="prevQuestion()">← Prev</button>
+      <button class="btn-secondary" onclick="shuffleQuiz()">🔀 Shuffle All 72</button>
+      <button class="btn-primary" id="nextBtn" onclick="nextQuestion()">Next Question →</button>
+    </div>
+  </aside>
+</main>
+
+<script>
+const LINKERS = [
+  {"word": "However", "band": "Band 6", "section": "Writing", "category": "Contrast", "role": "Conjunctive Adverb (links independent clauses)", "definition": "Introduces a contrasting statement between two independent clauses; requires a period or semicolon before it and a comma after.", "example": "Electric vehicles produce zero tailpipe emissions; <strong>however,</strong> their battery manufacturing remains resource-intensive.", "quiz_sentence": "The new metro line reduced traffic congestion; ______, ticket prices remain too high for low-income commuters.", "options": ["However", "Furthermore", "Consequently", "Namely"]},
+  {"word": "On the other hand", "band": "Band 6", "section": "Writing", "category": "Contrast", "role": "Transitional Phrase (links contrasting viewpoints)", "definition": "Presents the opposite side of an argument across separate sentences or paragraphs.", "example": "Living in a metropolis offers abundant career opportunities. <strong>On the other hand,</strong> high housing costs reduce disposable income.", "quiz_sentence": "Studying abroad builds independence. ______, it can cause severe homesickness during the first few months.", "options": ["On the other hand", "As a result", "In addition", "For instance"]},
+  {"word": "Although", "band": "Band 6", "section": "Both", "category": "Contrast", "role": "Subordinating Conjunction (links dependent + main clause)", "definition": "Introduces a subordinate clause of concession followed by a subject and verb.", "example": "<strong>Although</strong> renewable energy capacity is expanding rapidly, fossil fuels still supply most global electricity.", "quiz_sentence": "______ remote work saves commuting time, many employees miss face-to-face collaboration.", "options": ["Although", "Because", "Therefore", "Provided that"]},
+  {"word": "While / Whilst", "band": "Band 7", "section": "Writing", "category": "Contrast", "role": "Subordinating Conjunction (links contrasting finite clauses)", "definition": "Joins a subordinate clause of contrast to a main clause within one complex sentence.", "example": "<strong>While</strong> automation boosts industrial productivity, it simultaneously displaces routine manual workers.", "quiz_sentence": "______ artificial intelligence accelerates medical research, strict ethical safeguards remain indispensable.", "options": ["While", "Therefore", "Moreover", "Due to"]},
+  {"word": "Admittedly", "band": "Band 8–9", "section": "Writing", "category": "Concession", "role": "Concessive Sentence Adverb (concedes counterargument)", "definition": "Modifies an entire independent clause to acknowledge a valid opposing point before qualifying it.", "example": "<strong>Admittedly,</strong> high-speed rail networks require massive upfront capital; however, they cut emissions for decades.", "quiz_sentence": "______, transitioning to renewable energy entails short-term costs, yet long-term climate stability outweighs them.", "options": ["Admittedly", "Consequently", "Respectively", "Otherwise"]},
+  {"word": "Nevertheless", "band": "Band 7", "section": "Writing", "category": "Contrast", "role": "Conjunctive Adverb (links independent sentences)", "definition": "Formal sentence adverb meaning 'in spite of that', connecting two complete independent thoughts.", "example": "The proposed carbon tax faced fierce corporate opposition. <strong>Nevertheless,</strong> parliament ratified the legislation.", "quiz_sentence": "The vaccine trial had minor delays. ______, researchers released the final data ahead of schedule.", "options": ["Nevertheless", "Moreover", "Similarly", "Hence"]},
+  {"word": "Whereas", "band": "Band 7", "section": "Writing", "category": "Contrast", "role": "Subordinating Conjunction (direct clause contrast)", "definition": "Joins two contrasting clauses within a single complex sentence to highlight a direct difference.", "example": "Urban centers experienced rapid demographic expansion, <strong>whereas</strong> rural provinces suffered steady decline.", "quiz_sentence": "Teenagers often prefer messaging apps, ______ older adults still rely heavily on phone calls.", "options": ["whereas", "therefore", "moreover", "unless"]},
+  {"word": "Despite", "band": "Band 7", "section": "Writing", "category": "Contrast", "role": "Preposition of Concession (+ Noun Phrase / Gerund)", "definition": "Links a noun phrase or -ing verb (never a full finite clause) to an independent main clause.", "example": "<strong>Despite</strong> investing billions in highway expansion, major cities still suffer from chronic gridlock.", "quiz_sentence": "______ strict plastic bans in supermarkets, packaging waste continues to rise globally.", "options": ["Despite", "Although", "Whereas", "Because"]},
+  {"word": "In spite of", "band": "Band 7", "section": "Writing", "category": "Contrast", "role": "Prepositional Phrase (+ Noun Phrase / Gerund)", "definition": "Functions identically to 'despite'; attaches a noun or gerund phrase to a main clause.", "example": "<strong>In spite of</strong> widespread access to free online lectures, many students prefer in-person seminars.", "quiz_sentence": "______ having access to free online courses, many students still prefer traditional classrooms.", "options": ["In spite of", "Even though", "Consequently", "Thus"]},
+  {"word": "Nonetheless", "band": "Band 8–9", "section": "Writing", "category": "Contrast", "role": "Conjunctive Adverb (links independent clauses)", "definition": "High-register formal adverb connecting two independent clauses to show contrast.", "example": "The clinical study relied on a small cohort; <strong>nonetheless,</strong> its statistical conclusions remain compelling.", "quiz_sentence": "Space exploration requires immense funding; ______, its technological spin-offs benefit everyday life.", "options": ["nonetheless", "accordingly", "similarly", "namely"]},
+  {"word": "Conversely", "band": "Band 8–9", "section": "Writing", "category": "Contrast", "role": "Conjunctive Adverb (links opposing statements)", "definition": "Introduces an independent sentence expressing the exact logical reverse of the preceding statement.", "example": "E-commerce revenues surged by 40% last year. <strong>Conversely,</strong> brick-and-mortar stores saw steep declines.", "quiz_sentence": "Countries with high sugar taxes saw lower obesity rates. ______, nations without regulations experienced a sharp rise.", "options": ["Conversely", "Likewise", "Thereby", "Subsequently"]},
+  {"word": "Albeit", "band": "Band 8–9", "section": "Writing", "category": "Contrast", "role": "Concessive Conjunction (+ Adjective / Phrase only)", "definition": "Means 'although', attaching strictly to a reduced phrase or adjective rather than a full subject-verb clause.", "example": "The economy is steadily recovering, <strong>albeit</strong> at a significantly slower pace than forecasted.", "quiz_sentence": "The new solar panels are highly efficient, ______ slightly more expensive than standard models.", "options": ["albeit", "whereas", "therefore", "besides"]},
+  {"word": "Notwithstanding", "band": "Band 8–9", "section": "Writing", "category": "Contrast", "role": "Formal Preposition or Adverb (+ Noun Phrase)", "definition": "Formal marker meaning 'in spite of' before a noun phrase, or 'nevertheless' when used adverbially.", "example": "<strong>Notwithstanding</strong> severe municipal budget cuts, the library launched three digital literacy programs.", "quiz_sentence": "______ initial skepticism from critics, the community-led recycling program proved remarkably successful.", "options": ["Notwithstanding", "Consequently", "Furthermore", "Provided that"]},
+  {"word": "That said", "band": "Band 8–9", "section": "Both", "category": "Contrast", "role": "Discourse Marker (qualifies prior statement)", "definition": "Bridges two independent sentences by conceding the first point before introducing a qualification.", "example": "Automated grading tools save teachers hours. <strong>That said,</strong> they struggle to evaluate creative nuance.", "quiz_sentence": "Artificial intelligence speeds up medical diagnoses. ______, human doctors remain essential for patient empathy.", "options": ["That said", "As a result", "In addition", "For example"]},
+  {"word": "By contrast", "band": "Band 7", "section": "Writing", "category": "Task 1 Data", "role": "Transitional Prepositional Phrase (contrasts data)", "definition": "Ideal for Task 1 data comparison (unlike 'on the other hand', which is meant for opinions).", "example": "Wind power generated 42% of Denmark's electricity in 2020. <strong>By contrast,</strong> coal accounted for under 10%.", "quiz_sentence": "Car ownership in Los Angeles exceeded 80%. ______, fewer than 35% of Tokyo residents owned a private vehicle.", "options": ["By contrast", "On the other hand", "Therefore", "Furthermore"]},
+  {"word": "Therefore", "band": "Band 6", "section": "Writing", "category": "Cause & Effect", "role": "Conjunctive Adverb (links cause to result clause)", "definition": "Connects two independent clauses where the second expresses a direct logical conclusion.", "example": "Particulate pollution damages lung health; <strong>therefore,</strong> cities must restrict aging diesel vehicles.", "quiz_sentence": "Freshwater supplies are shrinking rapidly; ______, governments must invest in desalination technology.", "options": ["therefore", "however", "whereas", "although"]},
+  {"word": "Mirroring this trend", "band": "Band 8–9", "section": "Writing", "category": "Task 1 Data", "role": "Participial Clause Opener (links parallel trends)", "definition": "Opens a sentence with an -ing participle phrase to link a second dataset showing the same pattern.", "example": "Online newspaper readership doubled by 2020. <strong>Mirroring this trend,</strong> podcast listenership rose sharply.", "quiz_sentence": "Smartphone usage climbed steadily among teens. ______, tablet adoption saw an identical upward trajectory.", "options": ["Mirroring this trend", "Conversely", "Prior to this", "Despite this"]},
+  {"word": "Accounting for", "band": "Band 8–9", "section": "Writing", "category": "Task 1 Data", "role": "Participial Phrase (+ Percentage / Share)", "definition": "Follows a main clause after a comma to specify the exact proportion or percentage a category represents.", "example": "Housing constituted the largest municipal expenditure, <strong>accounting for</strong> 42% of the total budget.", "quiz_sentence": "Renewable sources generated the bulk of electricity, ______ nearly two-thirds of total national output.", "options": ["accounting for", "culminating in", "stemming from", "barring"]},
+  {"word": "Followed by", "band": "Band 7", "section": "Writing", "category": "Task 1 Data", "role": "Past-Participial Phrase (ranks data/stages)", "definition": "Attaches secondary items in descending order of magnitude or sequential stages in a Task 1 diagram.", "example": "Transportation generated the largest share of emissions at 38%, <strong>followed by</strong> heavy industry at 29%.", "quiz_sentence": "Coal was the primary fuel source at 45%, ______ natural gas and hydroelectric power at 30% and 15%.", "options": ["followed by", "conversely", "provided that", "whereas"]},
+  {"word": "Simultaneously", "band": "Band 7", "section": "Writing", "category": "Task 1 Data", "role": "Temporal Adverb (links concurrent trends)", "definition": "Connects two clauses or actions occurring at the exact same point in time.", "example": "Global smartphone sales surged after 2010; <strong>simultaneously,</strong> digital camera shipments collapsed.", "quiz_sentence": "The mixture is heated to 90 degrees Celsius and ______ stirred to prevent crystallization.", "options": ["simultaneously", "subsequently", "prior to", "otherwise"]},
+  {"word": "Provided that", "band": "Band 7", "section": "Writing", "category": "Condition", "role": "Conditional Subordinating Conjunction (+ Clause)", "definition": "Joins a main clause to a mandatory condition clause required for the outcome to occur.", "example": "Tourism revitalizes local economies <strong>provided that</strong> revenues are reinvested into community infrastructure.", "quiz_sentence": "Online learning can match classroom quality ______ students have reliable internet and self-discipline.", "options": ["provided that", "even though", "consequently", "meanwhile"]},
+  {"word": "Unless", "band": "Band 7", "section": "Both", "category": "Condition", "role": "Negative Conditional Conjunction (+ Finite Clause)", "definition": "Introduces the sole condition under which the main clause will not happen; takes a positive verb.", "example": "Global biodiversity will continue to decline rapidly <strong>unless</strong> governments enforce anti-deforestation laws.", "quiz_sentence": "Coastal aquifers will become contaminated with saltwater ______ groundwater extraction is tightly regulated.", "options": ["unless", "provided that", "therefore", "moreover"]},
+  {"word": "Otherwise", "band": "Band 7", "section": "Writing", "category": "Condition", "role": "Conjunctive Adverb (links action to consequence)", "definition": "Connects two independent clauses where the second describes the undesirable outcome if the first is ignored.", "example": "Cities must upgrade aging drainage infrastructure; <strong>otherwise,</strong> extreme rainfall will cause severe flooding.", "quiz_sentence": "Developing nations must diversify their energy grids now; ______, rapid industrialization will trigger severe power shortages.", "options": ["otherwise", "furthermore", "similarly", "nonetheless"]},
+  {"word": "Subsequently", "band": "Band 7", "section": "Writing", "category": "Sequence", "role": "Temporal Adverb (links chronological stages)", "definition": "Modifies a verb or introduces a sentence to show that an event happened after a prior stage.", "example": "The harvested timber is kiln-dried and <strong>subsequently</strong> transported to regional manufacturing plants.", "quiz_sentence": "The law was passed in 2018 and ______ enforced across all major metropolitan areas a year later.", "options": ["subsequently", "conversely", "otherwise", "albeit"]},
+  {"word": "Prior to", "band": "Band 7", "section": "Writing", "category": "Sequence", "role": "Temporal Preposition (+ Noun Phrase / Gerund)", "definition": "Formal alternative to 'before'; attaches a noun phrase or -ing gerund to indicate an earlier time.", "example": "<strong>Prior to</strong> the invention of printing, manuscripts had to be painstakingly transcribed by hand.", "quiz_sentence": "______ launching the product nationwide, the company conducted six months of safety testing.", "options": ["Prior to", "Owing to", "Despite", "Thereby"]},
+  {"word": "Arguably", "band": "Band 7", "section": "Both", "category": "Hedging", "role": "Epistemic Sentence Adverb (softens strong claims)", "definition": "Signals that a claim is well-supported by evidence rather than absolute.", "example": "Climate change is <strong>arguably</strong> the most pressing geopolitical challenge of the twenty-first century.", "quiz_sentence": "The invention of the internet is ______ the most transformative milestone in modern human history.", "options": ["arguably", "conversely", "respectively", "meanwhile"]},
+  {"word": "Ostensibly", "band": "Band 8–9", "section": "Writing", "category": "Hedging", "role": "Attitudinal Adverb (contrasts appearance vs. reality)", "definition": "Indicates that something appears true on the surface while hinting at hidden motives.", "example": "The congestion charge was <strong>ostensibly</strong> introduced to curb emissions, though critics saw it as a revenue measure.", "quiz_sentence": "The new app was ______ designed to protect user privacy, yet it still collects location data.", "options": ["ostensibly", "thereby", "consequently", "likewise"]},
+  {"word": "Strictly speaking", "band": "Band 8–9", "section": "Both", "category": "Self-Correction", "role": "Metalinguistic Disjunct (frames technical precision)", "definition": "Clarifies that the statement follows exact scientific, legal, or technical definitions.", "example": "<strong>Strictly speaking,</strong> a tomato is botanically classified as a fruit, though chefs prepare it as a vegetable.", "quiz_sentence": "______, spiders are arachnids rather than insects because they have eight legs instead of six.", "options": ["Strictly speaking", "By and large", "On the flip side", "As a result"]},
+  {"word": "Having said that", "band": "Band 7", "section": "Speaking", "category": "Speaking", "role": "Spoken Concessive Marker (links contrasting turns)", "definition": "Natural conversational bridge used between two spoken sentences to pivot to a contrasting caveat.", "example": "I love living in a quiet coastal town. <strong>Having said that,</strong> I do miss having vibrant cultural venues nearby.", "quiz_sentence": "Working from home gives me huge flexibility. ______, it can feel pretty isolating after a few days.", "options": ["Having said that", "Furthermore", "Hence", "Respectively"]},
+  {"word": "On the flip side", "band": "Band 7", "section": "Speaking", "category": "Speaking", "role": "Idiomatic Spoken Linker (introduces opposite angle)", "definition": "Conversational substitute for 'on the other hand' introducing the opposite angle of a topic.", "example": "Traveling solo builds self-reliance. <strong>On the flip side,</strong> you don't have anyone beside you to share memories.", "quiz_sentence": "Being famous brings incredible wealth. ______, you lose almost all of your personal privacy.", "options": ["On the flip side", "Consequently", "Namely", "Prior to that"]},
+  {"word": "Mind you", "band": "Band 8–9", "section": "Speaking", "category": "Speaking", "role": "Conversational Afterthought Marker (qualifies claim)", "definition": "Spoken discourse marker added to introduce an afterthought that qualifies or contrasts what was just said.", "example": "The physics exam was brutally difficult. <strong>Mind you,</strong> I didn't revise nearly as much as I should have.", "quiz_sentence": "Winter here is freezing cold. ______, the snowy landscapes look absolutely magical in December.", "options": ["Mind you", "Therefore", "Moreover", "Subsequently"]},
+  {"word": "Come to think of it", "band": "Band 8–9", "section": "Speaking", "category": "Speaking", "role": "Spontaneous Realization Marker (shifts thought)", "definition": "Signals real-time realization when you suddenly recall a relevant detail mid-answer.", "example": "I rarely watch broadcast TV anymore. <strong>Come to think of it,</strong> I haven't turned mine on since last autumn.", "quiz_sentence": "I don't usually enjoy sci-fi movies. ______, 'Interstellar' is actually one of my all-time favorites.", "options": ["Come to think of it", "In conclusion", "Conversely", "Owing to this"]},
+  {"word": "By and large", "band": "Band 8–9", "section": "Speaking", "category": "Speaking", "role": "Generalizing Adverbial Phrase (frames Part 3 claims)", "definition": "Expresses a broad generalization ('on the whole') while allowing for minor exceptions.", "example": "<strong>By and large,</strong> younger generations today are far more eco-conscious than their grandparents were.", "quiz_sentence": "______, public transport in my city is reliable, though occasional delays happen during rush hour.", "options": ["By and large", "Specifically", "Nonetheless", "Namely"]},
+  {"word": "More often than not", "band": "Band 8–9", "section": "Speaking", "category": "Speaking", "role": "Idiomatic Frequency Adverbial (expresses probability)", "definition": "Replaces repetitive words like 'usually' to state what happens in most situations.", "example": "When shoppers impulse-buy cheap fast fashion, <strong>more often than not</strong> those garments end up discarded quickly.", "quiz_sentence": "When I try cooking a new recipe without measuring ingredients, ______ it turns out way too salty.", "options": ["more often than not", "on the contrary", "prior to this", "nevertheless"]},
+  {"word": "To put things into perspective", "band": "Band 8–9", "section": "Speaking", "category": "Speaking", "role": "Infinitive Framing Clause (contextualizes scale)", "definition": "Introduces a comparative benchmark so the examiner grasps the true magnitude of a figure.", "example": "The city spent $2 million upgrading local parks. <strong>To put things into perspective,</strong> that's under 1% of its budget.", "quiz_sentence": "Over ten million tourists visit every year. ______, that is nearly double the country's entire population.", "options": ["To put things into perspective", "On the flip side", "If I recall correctly", "Or rather"]},
+  {"word": "Or rather", "band": "Band 7", "section": "Speaking", "category": "Self-Correction", "role": "Repair / Reformulation Marker (replaces word)", "definition": "Used mid-utterance to smoothly self-correct a previous word with a more accurate description.", "example": "I lived in Madrid for three years—<strong>or rather,</strong> two and a half years, since I traveled a lot.", "quiz_sentence": "My brother is a doctor—______, he's still finishing his final year of medical residency.", "options": ["or rather", "moreover", "thus", "in contrast"]},
+  {"word": "If I recall correctly", "band": "Band 8–9", "section": "Speaking", "category": "Self-Correction", "role": "Conditional Epistemic Clause (hedges memory)", "definition": "Subordinate 'if'-clause placed before a main clause to politely signal that a recalled fact is approximate.", "example": "<strong>If I recall correctly,</strong> the first modern Olympic Games were hosted in Athens back in 1896.", "quiz_sentence": "______, the museum underwent a massive renovation about five years ago before reopening to the public.", "options": ["If I recall correctly", "In conclusion", "Conversely", "Notwithstanding"]},
+  {"word": "That's a tough one, actually", "band": "Band 8–9", "section": "Speaking", "category": "Buying Time", "role": "Turn-Initial Stalling Clause (buys thinking time)", "definition": "Natural spoken reaction at the start of a Part 3 turn that buys thinking time without awkward hesitation.", "example": "<strong>That's a tough one, actually,</strong> because both traditional libraries and digital archives serve different needs.", "quiz_sentence": "Examiner: Should governments fund space exploration over healthcare? Candidate: ______, as both yield vital long-term benefits.", "options": ["That's a tough one, actually", "Moreover", "Henceforth", "Respectively"]},
+  {"word": "Off the top of my head", "band": "Band 8–9", "section": "Speaking", "category": "Buying Time", "role": "Idiomatic Prepositional Modifier (spontaneous estimate)", "definition": "Frames a quick estimation or memory retrieval performed immediately without prior calculation.", "example": "<strong>Off the top of my head,</strong> I'd say roughly seventy percent of my screen time goes toward work emails.", "quiz_sentence": "______, I think there are about five independent bookstores left in my entire neighborhood.", "options": ["Off the top of my head", "Consequently", "Notwithstanding", "In turn"]},
+  {"word": "As far as I'm concerned", "band": "Band 7", "section": "Speaking", "category": "Stance & Opinion", "role": "Finite Stance Clause (anchors personal viewpoint)", "definition": "Introduces an independent opinion clause in Parts 1 or 3, sounding far more natural than 'In my opinion'.", "example": "<strong>As far as I'm concerned,</strong> practical financial literacy should be mandatory in every secondary school.", "quiz_sentence": "______, learning a second language is the single best way to understand another culture.", "options": ["As far as I'm concerned", "Thereby", "Albeit", "Subsequently"]},
+  {"word": "The way I see it", "band": "Band 8–9", "section": "Speaking", "category": "Stance & Opinion", "role": "Noun-Clause Stance Opener (frames interpretation)", "definition": "Conversational clause opener used to present your personal analysis of a complex social issue in Part 3.", "example": "<strong>The way I see it,</strong> remote work isn't killing office culture—it's forcing companies to communicate better.", "quiz_sentence": "______, social media is neither purely good nor bad; it simply amplifies human behavior.", "options": ["The way I see it", "Owing to", "Prior to", "Namely"]},
+  {"word": "From my perspective", "band": "Band 7", "section": "Speaking", "category": "Stance & Opinion", "role": "Prepositional Stance Phrase (semi-formal opinion)", "definition": "Prepositional phrase used at the start of a Part 3 response to express a measured, thoughtful viewpoint.", "example": "<strong>From my perspective,</strong> urban green spaces are just as vital to public health as hospitals are.", "quiz_sentence": "______, universities focus too heavily on standardized exams rather than real-world problem solving.", "options": ["From my perspective", "Thus", "Whereas", "Accounting for"]},
+  {"word": "As a rule", "band": "Band 8–9", "section": "Speaking", "category": "Generalizing", "role": "Idiomatic Adverbial Phrase (states habitual norm)", "definition": "Modifies a main clause to describe what normally happens in your routine or society.", "example": "<strong>As a rule,</strong> I try to avoid checking work messages after eight in the evening so I can unwind.", "quiz_sentence": "______, people in my country prefer buying fresh produce from local street markets rather than supermarkets.", "options": ["As a rule", "Conversely", "Albeit", "Hence"]},
+  {"word": "To a certain extent", "band": "Band 8–9", "section": "Both", "category": "Generalizing", "role": "Degree Adverbial Phrase (partial agreement)", "definition": "Qualifies an adjective or verb to show nuanced, partial agreement—ideal for 'To what extent' questions.", "example": "I agree <strong>to a certain extent</strong> that automation threatens entry-level jobs, though it creates new tech roles.", "quiz_sentence": "Advertising influences what children want ______, but parents still hold the ultimate purchasing power.", "options": ["to a certain extent", "respectively", "meanwhile", "subsequently"]},
+  {"word": "What I mean by that is", "band": "Band 8–9", "section": "Speaking", "category": "Clarifying", "role": "Pseudo-Cleft Clause Frame (clarifies prior idea)", "definition": "Connects a broad statement to a concrete explanation when elaborating in Part 3.", "example": "Modern cities feel homogenized. <strong>What I mean by that is</strong> every high street features the exact same chains.", "quiz_sentence": "Success isn't purely financial. ______, having time for family and personal health matters just as much.", "options": ["What I mean by that is", "Notwithstanding", "Consequently", "Prior to that"]},
+  {"word": "In other words", "band": "Band 7", "section": "Both", "category": "Clarifying", "role": "Reformulation Adverbial (paraphrases prior idea)", "definition": "Links two independent sentences where the second paraphrases the first for maximum clarity.", "example": "The company has a flat hierarchy. <strong>In other words,</strong> junior designers can pitch ideas directly to the CEO.", "quiz_sentence": "The policy is completely revenue-neutral. ______, every dollar collected in carbon taxes goes straight back to households.", "options": ["In other words", "On the flip side", "Despite this", "Subsequently"]},
+  {"word": "To give you an idea", "band": "Band 8–9", "section": "Speaking", "category": "Examples", "role": "Spoken Infinitive Phrase (relatable illustration)", "definition": "Natural spoken alternative to 'for example' that leads into a vivid personal or real-world anecdote.", "example": "Summers here have become hotter. <strong>To give you an idea,</strong> last July broke records set eighty years ago.", "quiz_sentence": "The traffic in downtown Cairo is chaotic. ______, a five-kilometer drive can easily take over an hour.", "options": ["To give you an idea", "Nonetheless", "Thereby", "Respectively"]},
+  {"word": "As it turned out", "band": "Band 8–9", "section": "Speaking", "category": "Storytelling", "role": "Narrative Finite Clause (unexpected outcome)", "definition": "Connects a past expectation to what actually happened in reality—essential for Part 2 storytelling.", "example": "We worried rain would ruin our camping trip. <strong>As it turned out,</strong> the skies cleared right before sunset.", "quiz_sentence": "I assumed the job interview had gone terribly. ______, they called me the very next morning with an offer.", "options": ["As it turned out", "By the same token", "Whereas", "Provided that"]},
+  {"word": "Looking back", "band": "Band 8–9", "section": "Speaking", "category": "Storytelling", "role": "Participial Narrative Opener (retrospective reflection)", "definition": "Opens a concluding sentence in Part 2 with a present participle to evaluate a past experience.", "example": "<strong>Looking back,</strong> failing that first driving test was a blessing because it forced me to become a safer driver.", "quiz_sentence": "______, moving to a new country alone at eighteen was the most transformative decision of my life.", "options": ["Looking back", "Furthermore", "Respectively", "Ostensibly"]},
+  {"word": "Getting back to my point", "band": "Band 8–9", "section": "Speaking", "category": "Storytelling", "role": "Digression-Recovery Marker (redirects coherence)", "definition": "Participial phrase that smoothly steers your answer back to the main question after a brief tangent.", "example": "Sorry, I went off on a tangent there—<strong>getting back to my point,</strong> public libraries remain vital hubs.", "quiz_sentence": "Anyway, ______, I think teaching kids how to cook is far more practical than memorizing obscure facts.", "options": ["getting back to my point", "in spite of this", "consequently", "namely"]},
+  {"word": "All things considered", "band": "Band 8–9", "section": "Speaking", "category": "Wrapping Up", "role": "Absolute Participial Phrase (balanced conclusion)", "definition": "Natural spoken closer for Parts 2 and 3 that weighs pros and cons without using essay clichés.", "example": "<strong>All things considered,</strong> living abroad has bureaucratic headaches, yet the personal growth makes it worthwhile.", "quiz_sentence": "______, I'd say hybrid working offers the healthiest balance between career productivity and family life.", "options": ["All things considered", "Mirroring this trend", "Due to", "Albeit"]},
+  {"word": "At the end of the day", "band": "Band 7", "section": "Speaking", "category": "Wrapping Up", "role": "Idiomatic Concluding Adverbial (bottom line)", "definition": "Conversational idiom used at the end of a Part 3 discussion to emphasize the ultimate truth.", "example": "Technology upgrades classrooms, but <strong>at the end of the day,</strong> inspiring teachers make the biggest difference.", "quiz_sentence": "______, people choose jobs that offer respect and work-life balance, not just the highest paycheck.", "options": ["At the end of the day", "Subsequently", "Whereas", "Accounting for"]},
+  {"word": "Even though", "band": "Band 6", "section": "Both", "category": "Contrast", "role": "Subordinating Conjunction (+ Finite Clause)", "definition": "Stronger, more emphatic form of 'although' followed by a subject and verb.", "example": "<strong>Even though</strong> electric cars cost more upfront, they save drivers thousands in fuel over time.", "quiz_sentence": "______ she had never visited Paris before, she navigated the metro system effortlessly.", "options": ["Even though", "Despite", "Therefore", "Furthermore"]},
+  {"word": "In contrast", "band": "Band 7", "section": "Writing", "category": "Contrast", "role": "Transitional Prepositional Phrase (links contrasting facts)", "definition": "Highlights a sharp difference between two subjects or datasets across sentences.", "example": "Northern provinces receive heavy rainfall year-round. <strong>In contrast,</strong> southern regions suffer frequent droughts.", "quiz_sentence": "Print newspaper circulation fell sharply. ______, digital news subscriptions reached an all-time high.", "options": ["In contrast", "Similarly", "Consequently", "Namely"]},
+  {"word": "On the contrary", "band": "Band 7", "section": "Writing", "category": "Contrast", "role": "Conjunctive Adverbial (denies previous negative claim)", "definition": "Used after a negative statement to assert that the exact opposite is true.", "example": "Automation has not eliminated jobs overall; <strong>on the contrary,</strong> it has created millions of new tech roles.", "quiz_sentence": "Remote workers are not less productive; ______, studies show their output often increases.", "options": ["on the contrary", "as a result", "for instance", "similarly"]},
+  {"word": "Yet", "band": "Band 7", "section": "Both", "category": "Contrast", "role": "Coordinating Conjunction (links surprising contrast)", "definition": "Connects two clauses to introduce a surprising or paradoxical outcome.", "example": "Global food production has reached record highs, <strong>yet</strong> millions of people still face chronic hunger.", "quiz_sentence": "He studied medicine for six years, ______ he ultimately decided to pursue a career in journalism.", "options": ["yet", "so", "for", "unless"]},
+  {"word": "Granted", "band": "Band 8–9", "section": "Both", "category": "Concession", "role": "Concessive Discourse Marker (admits point before pivot)", "definition": "Acknowledges that an opposing point is true before presenting a stronger counterargument.", "example": "<strong>Granted,</strong> online courses lack campus life, but they make higher education accessible worldwide.", "quiz_sentence": "______, solar panels depend on sunlight, yet modern batteries store enough power for cloudy days.", "options": ["Granted", "Therefore", "Respectively", "Otherwise"]},
+  {"word": "Because of", "band": "Band 6", "section": "Both", "category": "Cause & Effect", "role": "Compound Preposition (+ Noun Phrase)", "definition": "Links a noun or noun phrase of cause to a main clause.", "example": "Several coastal highways were closed <strong>because of</strong> severe storm surges.", "quiz_sentence": "The outdoor concert was postponed ______ torrential rain and high winds.", "options": ["because of", "although", "whereas", "moreover"]},
+  {"word": "Since", "band": "Band 6", "section": "Both", "category": "Cause & Effect", "role": "Subordinating Conjunction (+ Finite Clause)", "definition": "Introduces a known or logical reason followed by a subject and verb.", "example": "<strong>Since</strong> urban land is scarce, architects are increasingly building vertical green skyscrapers.", "quiz_sentence": "______ public transport runs every five minutes, owning a car in the city center is unnecessary.", "options": ["Since", "Despite", "However", "Unless"]},
+  {"word": "As a consequence", "band": "Band 7", "section": "Writing", "category": "Cause & Effect", "role": "Transitional Adverbial Phrase (links cause to effect)", "definition": "Formal alternative to 'as a result' introducing a significant outcome.", "example": "Deforestation destroyed vital habitats. <strong>As a consequence,</strong> dozens of local bird species vanished.", "quiz_sentence": "Interest rates rose sharply last year. ______, mortgage applications dropped to a ten-year low.", "options": ["As a consequence", "On the other hand", "In spite of this", "For example"]},
+  {"word": "In addition", "band": "Band 6", "section": "Writing", "category": "Addition", "role": "Transitional Adverbial Phrase (adds supporting point)", "definition": "Introduces an extra supporting fact or argument at the start of a new sentence.", "example": "The museum offers free guided tours. <strong>In addition,</strong> it hosts weekly workshops for local schools.", "quiz_sentence": "Cycling reduces traffic congestion. ______, it significantly lowers municipal road maintenance costs.", "options": ["In addition", "However", "Conversely", "Otherwise"]},
+  {"word": "Besides", "band": "Band 6", "section": "Speaking", "category": "Addition", "role": "Preposition or Adverb (adds conversational point)", "definition": "Adds a practical extra reason in natural speech or semi-formal writing.", "example": "I don't want to buy a car right now; <strong>besides,</strong> the subway takes me straight to my office.", "quiz_sentence": "That restaurant is far too expensive, and ______, the portions are tiny.", "options": ["besides", "whereas", "consequently", "namely"]},
+  {"word": "What is more", "band": "Band 7", "section": "Writing", "category": "Addition", "role": "Emphatic Transitional Clause (adds stronger point)", "definition": "Introduces an additional point that is even more impressive or decisive than the previous one.", "example": "The new battery charges in ten minutes. <strong>What is more,</strong> it lasts twice as long as standard cells.", "quiz_sentence": "The treatment has zero side effects. ______, it costs a fraction of traditional therapies.", "options": ["What is more", "On the contrary", "Nevertheless", "Prior to this"]},
+  {"word": "Similarly", "band": "Band 7", "section": "Writing", "category": "Comparison", "role": "Conjunctive Adverb (links parallel ideas/data)", "definition": "Connects two independent sentences to show a strong resemblance between two trends or facts.", "example": "Japan invests heavily in robotics. <strong>Similarly,</strong> South Korea leads the world in industrial automation.", "quiz_sentence": "Coffee consumption rose steadily in Europe. ______, tea sales climbed across North America.", "options": ["Similarly", "Conversely", "However", "Otherwise"]},
+  {"word": "Likewise", "band": "Band 7", "section": "Writing", "category": "Comparison", "role": "Conjunctive Adverb (links analogous actions/trends)", "definition": "Formal adverb meaning 'in the same way', linking two comparable statements.", "example": "Parents must model healthy screen habits; <strong>likewise,</strong> schools should teach digital balance.", "quiz_sentence": "The first experiment yielded consistent data; ______, the follow-up trial confirmed the hypothesis.", "options": ["likewise", "nonetheless", "whereas", "albeit"]},
+  {"word": "For example", "band": "Band 6", "section": "Both", "category": "Examples", "role": "Exemplifying Adverbial (introduces illustration)", "definition": "Introduces a concrete example to support a general statement.", "example": "Many cities encourage green commuting; <strong>for example,</strong> Amsterdam provides extensive bicycle highways.", "quiz_sentence": "Renewable energy takes many forms, ______, wind turbines, solar panels, and geothermal plants.", "options": ["for example", "therefore", "however", "whereas"]},
+  {"word": "Such as", "band": "Band 6", "section": "Both", "category": "Examples", "role": "Exemplifying Preposition (+ Noun Phrases)", "definition": "Introduces inline examples directly after a category noun without starting a new clause.", "example": "High-income economies <strong>such as</strong> Germany and Japan face rapidly aging populations.", "quiz_sentence": "Outdoor activities ______ hiking and kayaking help reduce workplace stress.", "options": ["such as", "therefore", "moreover", "although"]},
+  {"word": "Specifically", "band": "Band 7", "section": "Writing", "category": "Clarifying", "role": "Focusing Sentence Adverb (narrows broad claim)", "definition": "Moves from a general statement to a precise detail or target group.", "example": "Air quality has worsened in major capitals, <strong>specifically</strong> during winter peak traffic hours.", "quiz_sentence": "The grant supports young entrepreneurs, ______ founders under thirty launching green startups.", "options": ["specifically", "conversely", "nevertheless", "otherwise"]},
+  {"word": "As long as", "band": "Band 6", "section": "Both", "category": "Condition", "role": "Conditional Subordinating Conjunction (+ Clause)", "definition": "States a practical condition that must stay true for the main outcome to happen.", "example": "Freelancing offers wonderful freedom <strong>as long as</strong> you manage your finances carefully.", "quiz_sentence": "You can borrow my camera ______ you return it before my trip on Friday.", "options": ["as long as", "even though", "consequently", "moreover"]},
+  {"word": "Meanwhile", "band": "Band 6", "section": "Both", "category": "Sequence", "role": "Temporal Adverb (links simultaneous events)", "definition": "Indicates that a second event is happening at the exact same time as the first.", "example": "Tech giants are racing to build faster AI models. <strong>Meanwhile,</strong> regulators are drafting safety rules.", "quiz_sentence": "The chef prepared the sauce; ______, the vegetables were roasting in the oven.", "options": ["meanwhile", "therefore", "despite", "namely"]},
+  {"word": "At the same time", "band": "Band 7", "section": "Both", "category": "Contrast", "role": "Conjunctive Adverbial (balances dual truths/trends)", "definition": "Connects two simultaneous truths or opposing considerations without cancelling out the first statement.", "example": "Digital banking offers unmatched convenience. <strong>At the same time,</strong> it exposes elderly users to sophisticated online fraud.", "quiz_sentence": "Urbanization drives rapid economic growth. ______, it places immense strain on municipal water and housing infrastructure.", "options": ["At the same time", "Consequently", "Namely", "Prior to this"]},
+  {"word": "Broadly speaking", "band": "Band 8–9", "section": "Both", "category": "Generalizing", "role": "Metalinguistic Sentence Adverb (frames macro trends)", "definition": "Opens an analytical overview sentence in Task 1 or Speaking Part 3 to summarize general patterns before exceptions.", "example": "<strong>Broadly speaking,</strong> global energy consumption shifted steadily from coal toward natural gas and renewables over the decade.", "quiz_sentence": "______, nations with higher female workforce participation enjoy stronger long-term GDP growth.", "options": ["Broadly speaking", "Conversely", "Albeit", "Otherwise"]}
+];
+
+var currentFilter = 'ALL';
+var allFlipped = false;
+var quizOrder = LINKERS.map(function(_, idx) { return idx; });
+var currentQIdx = 0;
+var score = 0;
+var answeredCount = 0;
+var streak = 0;
+var answeredMap = {};
+
+function getBandClass(band) {
+  if (band.indexOf('6') !== -1) return 'band-6';
+  if (band.indexOf('7') !== -1) return 'band-7';
+  return 'band-8';
+}
+
+function getModeBadge(section) {
+  if (section === 'Writing') return '<span class="mode-tag mode-writing">✍️ Writing</span>';
+  if (section === 'Speaking') return '<span class="mode-tag mode-speaking">🎙️ Speaking</span>';
+  return '<span class="mode-tag mode-both">✍️🎙️ Both</span>';
+}
+function getPunctuationRule(item) {
+  if (item.section === 'Speaking') return '';
+  var r = item.role.toLowerCase();
+  var rule = '';
+  if (r.indexOf('conjunctive adverb') !== -1 || r.indexOf('transitional') !== -1 || r.indexOf('sentence adverb') !== -1 || r.indexOf('discourse marker') !== -1 || r.indexOf('disjunct') !== -1 || r.indexOf('concluding') !== -1) {
+    rule = 'Sentence start: "Linker, clause." • Mid-sentence: "Clause 1; linker, clause 2."';
+  } else if (r.indexOf('subordinating') !== -1 || r.indexOf('conditional') !== -1) {
+    rule = 'At start: "Linker + clause, main clause." • In middle: "Main clause + linker + clause" (no comma).';
+  } else if (r.indexOf('preposition') !== -1) {
+    rule = 'Must follow with Noun or -ing verb (never a full clause). Add comma if placed at the start.';
+  } else if (r.indexOf('participial') !== -1 || r.indexOf('adverb of means') !== -1) {
+    rule = 'At start: "Phrase, main clause." • After clause: "Main clause, + -ing/-ed phrase."';
+  } else if (r.indexOf('correlative') !== -1) {
+    rule = 'No comma between the two halves (e.g., "not only X but also Y").';
+  } else {
+    rule = 'Set off with commas when interrupting a clause (e.g., ", namely," or ", respectively.").';
+  }
+  return '<div class="back-label" style="margin-top:0.45rem;">Punctuation Rule</div><div class="back-def" style="color:#a5f3fc;font-weight:600;">✒️ ' + rule + '</div>';
+}
+
+function setFilter(filter, btnEl) {
+  currentFilter = filter;
+  document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+  btnEl.classList.add('active');
+  renderCards();
+}
+
+function renderCards() {
+  var query = document.getElementById('searchInput').value.toLowerCase().trim();
+  var grid = document.getElementById('cardsGrid');
+  var filtered = LINKERS.filter(function(item) {
+    var matchesFilter = currentFilter === 'ALL' || item.band === currentFilter || item.section === currentFilter ||
+      (currentFilter === 'Writing' && item.section === 'Both') || (currentFilter === 'Speaking' && item.section === 'Both');
+    var matchesSearch = !query || item.word.toLowerCase().indexOf(query) !== -1 || item.role.toLowerCase().indexOf(query) !== -1 ||
+      item.band.toLowerCase().indexOf(query) !== -1 || item.category.toLowerCase().indexOf(query) !== -1;
+    return matchesFilter && matchesSearch;
+  });
+
+  document.getElementById('totalCardsStat').textContent = filtered.length;
+  document.getElementById('allFilterBtn').textContent = 'All (' + LINKERS.length + ')';
+
+  grid.innerHTML = filtered.map(function(item) {
+    var shortRole = item.role.split('(').shift().trim();
+    return '<div class="flip-card ' + (allFlipped ? 'flipped' : '') + '" onclick="this.classList.toggle(\'flipped\')">' +
+      '<div class="flip-card-inner"><div class="flip-card-front"><div class="card-top-badges">' +
+      '<span class="band-tag ' + getBandClass(item.band) + '">' + item.band + '</span>' + getModeBadge(item.section) +
+      '</div><div class="card-word">' + item.word + '</div><div class="role-pill-front">⚙️ ' + shortRole + '</div>' +
+      '<div class="card-footer-hint"><span>' + item.category + '</span><span>Tap to flip ↻</span></div></div>' +
+      '<div class="flip-card-back"><div><div class="back-label">Grammatical Role</div><div class="back-role-text">' + item.role + '</div>' +
+      '<div class="back-label">Meaning & Usage</div><div class="back-def">' + item.definition + '</div>' + getPunctuationRule(item) + '</div>' +
+      '<div><div class="back-label">IELTS Example</div><div class="back-example-box">"' + item.example + '"</div></div></div></div></div>';
+  }).join('');
+}
+
+function flipAllCards() {
+  allFlipped = !allFlipped;
+  document.querySelectorAll('.flip-card').forEach(function(card) { card.classList.toggle('flipped', allFlipped); });
+}
+
+function shuffleArray(arr) {
+  var copy = arr.slice();
+  for (var i = copy.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var temp = copy.splice(i, 1, copy.slice(j, j + 1).pop()).pop();
+    copy.splice(j, 1, temp);
+  }
+  return copy;
+}
+
+function renderQuestion() {
+  var itemIndex = quizOrder.slice(currentQIdx, currentQIdx + 1).pop();
+  var item = LINKERS.slice(itemIndex, itemIndex + 1).pop();
+  var existing = answeredMap[currentQIdx];
+
+  document.getElementById('qCounter').textContent = 'Question ' + (currentQIdx + 1) + ' / ' + LINKERS.length;
+  document.getElementById('progressBar').style.width = (((currentQIdx + 1) / LINKERS.length) * 100) + '%';
+
+  var targetTag = document.getElementById('qTargetTag');
+  targetTag.className = 'band-tag ' + getBandClass(item.band);
+  targetTag.textContent = item.band + ' • ' + item.section;
+  document.getElementById('qCategoryTag').textContent = item.category;
+
+  var formattedSentence = item.quiz_sentence;
+  if (existing && existing.selected.indexOf('/') !== -1) {
+    var parts = existing.selected.split('/').map(function(p) { return p.trim(); });
+    formattedSentence = formattedSentence
+      .replace('______', '<span class="blank-slot">' + (parts.shift() || '______') + '</span>')
+      .replace('______', '<span class="blank-slot">' + (parts.shift() || '______') + '</span>');
+  } else {
+    formattedSentence = formattedSentence.replace('______', '<span class="blank-slot">' + (existing ? existing.selected : '______') + '</span>');
+  }
+  document.getElementById('quizSentence').innerHTML = formattedSentence;
+
+  if (!item._shuffledOptions) { item._shuffledOptions = shuffleArray(item.options); }
+  var letters = ['A', 'B', 'C', 'D'];
+  document.getElementById('optionsGrid').innerHTML = item._shuffledOptions.map(function(opt, i) {
+    var cls = 'option-btn';
+    if (existing) {
+      var norm = item.word.replace('...', ' /');
+      var shortW = item.word.split('/').shift().trim();
+      if (opt.toLowerCase() === item.word.toLowerCase() || opt.toLowerCase() === norm.toLowerCase() || opt.toLowerCase() === shortW.toLowerCase()) cls += ' correct';
+      else if (opt === existing.selected) cls += ' wrong';
+    }
+    return '<button class="' + cls + '" ' + (existing ? 'disabled' : '') + ' onclick="selectAnswer(\'' + opt.replace(/'/g, "\\'") + '\')">' +
+      '<span class="option-letter">' + letters.slice(i, i + 1).pop() + '</span><span>' + opt + '</span></button>';
+  }).join('');
+
+  var banner = document.getElementById('feedbackBanner');
+  if (existing) {
+    banner.className = 'feedback-banner show ' + (existing.isCorrect ? 'ok' : 'err');
+    banner.innerHTML = existing.isCorrect
+      ? '<strong>✅ Spot on!</strong> "' + item.word + '" (' + item.band + ' • <em>' + item.role + '</em>): ' + item.definition
+      : '<strong>❌ Not quite.</strong> Best fit: <strong>"' + item.word + '"</strong> (' + item.band + ' • <em>' + item.role + '</em>). ' + item.definition;
+  } else {
+    banner.className = 'feedback-banner';
+    banner.innerHTML = '';
+  }
+}
+
+function selectAnswer(chosen) {
+  if (answeredMap[currentQIdx]) return;
+  var itemIndex = quizOrder.slice(currentQIdx, currentQIdx + 1).pop();
+  var item = LINKERS.slice(itemIndex, itemIndex + 1).pop();
+  var norm = item.word.replace('...', ' /');
+  var shortW = item.word.split('/').shift().trim();
+  var isCorrect = chosen.toLowerCase() === item.word.toLowerCase() || chosen.toLowerCase() === norm.toLowerCase() || chosen.toLowerCase() === shortW.toLowerCase();
+
+  answeredMap[currentQIdx] = { selected: chosen, isCorrect: isCorrect };
+  answeredCount++;
+  if (isCorrect) { score++; streak++; } else { streak = 0; }
+  document.getElementById('scoreStat').textContent = score + ' / ' + answeredCount;
+  document.getElementById('streakStat').textContent = streak;
+  renderQuestion();
+}
+
+function nextQuestion() { currentQIdx = (currentQIdx < LINKERS.length - 1) ? currentQIdx + 1 : 0; renderQuestion(); }
+function prevQuestion() { if (currentQIdx > 0) { currentQIdx--; renderQuestion(); } }
+function shuffleQuiz() {
+  quizOrder = shuffleArray(LINKERS.map(function(_, idx) { return idx; }));
+  LINKERS.forEach(function(item) { delete item._shuffledOptions; });
+  currentQIdx = 0; score = 0; answeredCount = 0; streak = 0; answeredMap = {};
+  document.getElementById('scoreStat').textContent = '0 / 0';
+  document.getElementById('streakStat').textContent = '0';
+  renderQuestion();
+}
+
+renderCards();
+renderQuestion();
+</script>
+</body>
+</html>
+
+
